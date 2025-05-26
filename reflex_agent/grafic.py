@@ -70,6 +70,46 @@ def chatbot_response(user_input):
         return "The Inquisition is a secretive organization rooting out heresy, mutants, and threats to the Imperium."
     elif user_input == "who are you":
         return "I am a simple AI chatbot agent."
+    elif user_input == "what is machine learning":
+        return "Machine learning is a subset of AI where systems learn from data to improve performance."
+    elif user_input == "what is deep learning":
+        return "Deep learning uses multi-layered neural networks to model complex patterns in data."
+    elif user_input == "what is neural network":
+        return "A neural network is a set of algorithms inspired by the human brain, designed to recognize patterns."
+    elif user_input == "what is natural language processing":
+        return "NLP is a field of AI focused on the interaction between computers and human language."
+    elif user_input == "what is computer vision":
+        return "Computer vision enables machines to interpret and understand visual information from the world."
+    elif user_input == "what is reinforcement learning":
+        return "Reinforcement learning teaches agents to make decisions by rewarding good behavior."
+    elif user_input == "what are ai applications":
+        return "AI is used in healthcare, self-driving cars, virtual assistants, finance, and more."
+    elif user_input == "what is supervised learning":
+        return "Supervised learning trains models on labeled data to make predictions."
+    elif user_input == "what is unsupervised learning":
+        return "Unsupervised learning finds patterns in unlabeled data."
+    elif user_input == "what is a chatbot":
+        return "A chatbot is an AI program designed to simulate conversation with humans."
+    elif user_input == "how does ai learn":
+        return "AI learns by analyzing data and improving its algorithms based on feedback."
+    elif user_input == "what is data mining":
+        return "Data mining is the process of discovering patterns in large datasets using AI techniques."
+    elif user_input == "what is the turing test":
+        return "The Turing Test measures a machine's ability to exhibit intelligent behavior indistinguishable from a human."
+    elif user_input == "what is ai ethics":
+        return "AI ethics involves ensuring AI systems are fair, transparent, and do not harm people."
+    elif user_input == "what is big data":
+        return "Big data refers to extremely large datasets that require advanced methods to analyze."
+    elif user_input == "what is predictive analytics":
+        return "Predictive analytics uses AI to forecast future trends based on historical data."
+    elif user_input == "what is computer intelligence":
+        return "Computer intelligence is a broad term for computers' ability to perform tasks requiring human intelligence."
+    elif user_input == "what is autonomous vehicle":
+        return "An autonomous vehicle uses AI to navigate and drive without human input."
+    elif user_input == "what is ai bias":
+        return "AI bias occurs when an AI system reflects prejudices present in its training data."
+    elif user_input == "what programming languages are used in ai":
+        return "Python, R, Java, and C++ are common programming languages for AI development."
     elif user_input == "bye":
         return "Goodbye! Have a great day!"
     else:
