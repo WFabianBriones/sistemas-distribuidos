@@ -1,4 +1,4 @@
-#!/home/fabianuwu/ai20251/workspace3/sistemas-distribuidos/workspace3/myenv/bin/python3
+#!/home/fabianuwu/ai20251/workspace2/sistemas-distribuidos/workspace3/myenv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
