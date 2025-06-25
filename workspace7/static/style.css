@@ -1,0 +1,193 @@
+body {
+  background-color: #f7f9fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38b000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: #34495e;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+hr {
+  border-top: 3px solid #38b000;
+  margin-bottom: 40px;
+  max-width: 100px;
+}
+
+section {
+  background: #fff;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+section h3 {
+  color: #38b000;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #38b000;
+  padding-bottom: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #38b000;
+  top: 2px;
+  font-size: 0.9rem;
+}
+
+section div h5 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+section div p em {
+  font-style: normal;
+  color: #6c757d;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+section div ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+section div ul li::before {
+  content: none;
+}
+
+.btn-primary {
+  background-color: #38b000;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #2a7000;
+}
+
+.text-center > a {
+  text-decoration: none;
+}
+
+/* Ocultar elementos en PDF/print */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Estilos nuevos del segundo bloque */
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  padding: 25px;
+  background: #fff;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  border: 1.5px solid #ced4da;
+  transition: border-color 0.3s;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #38b000;
+  box-shadow: 0 0 8px rgba(56, 176, 0, 0.25);
+}
+
+.input-group-text {
+  background-color: #38b000;
+  color: white;
+  border-radius: 8px 0 0 8px;
+  border: 1.5px solid #38b000;
+}
+
+.btn-success {
+  background-color: #38b000;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background-color: #2a7000;
+}
+
+.form-section-title {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #38b000;
+  padding-bottom: 5px;
+}

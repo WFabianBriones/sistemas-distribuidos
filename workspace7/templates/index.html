@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de Currículum Vitae</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Formulario Currículum Vitae</h1>
+    <p class="lead text-center">Completa tus datos para generar tu CV</p>
+
+
+    <form method="POST" action="/" enctype="multipart/form-data" class="w-100" style="max-width: 600px;">
+
+
+      <!-- Foto -->
+      <div class="card">
+        <div class="form-section-title">Foto</div>
+        <div class="mb-3">
+          <label for="foto" class="form-label"><i class="fa-solid fa-camera"></i> Sube tu foto</label>
+          <input type="file" class="form-control" id="foto" name="foto" accept="image/*" required />
+        </div>
+      </div>
+
+      <!-- Datos personales -->
+      <div class="card">
+        <div class="form-section-title">Datos Personales</div>
+        <div class="mb-3">
+          <label for="nombre"><i class="fa-solid fa-user"></i> Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+        </div>
+        <div class="mb-3">
+          <label for="titulo"><i class="fa-solid fa-briefcase"></i> Título profesional</label>
+          <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ej: Ingeniero en Sistemas"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="email_contacto"><i class="fa-solid fa-envelope"></i> Email</label>
+          <input type="email" class="form-control" id="email_contacto" name="email_contacto"
+            placeholder="ejemplo@correo.com" required />
+        </div>
+        <div class="mb-3">
+          <label for="telefono_contacto"><i class="fa-solid fa-phone"></i> Teléfono</label>
+          <input type="tel" class="form-control" id="telefono_contacto" name="telefono_contacto"
+            placeholder="+54 9 11 1234-5678" required />
+        </div>
+        <div class="mb-3">
+          <label for="ciudad"><i class="fa-solid fa-location-dot"></i> Ciudad y País</label>
+          <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Buenos Aires, Argentina"
+            required />
+        </div>
+      </div>
+
+      <!-- Perfil profesional -->
+      <div class="card">
+        <div class="form-section-title">Perfil Profesional</div>
+        <div class="mb-3">
+          <label for="perfil"><i class="fa-solid fa-file-lines"></i> Perfil</label>
+          <textarea class="form-control" id="perfil" name="perfil" rows="4"
+            placeholder="Describe brevemente tu perfil profesional" required></textarea>
+        </div>
+      </div>
+
+      <!-- Habilidades -->
+      <div class="card">
+        <div class="form-section-title">Habilidades Técnicas</div>
+        <div class="mb-3">
+          <label for="lenguajes"><i class="fa-brands fa-code"></i> Lenguajes (separados por comas)</label>
+          <input type="text" class="form-control" id="lenguajes" name="lenguajes"
+            placeholder="Ej: Python, JavaScript, Java" required />
+        </div>
+        <div class="mb-3">
+          <label for="frameworks"><i class="fa-solid fa-cubes-stacked"></i> Frameworks</label>
+          <input type="text" class="form-control" id="frameworks" name="frameworks" placeholder="Ej: React, Django"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="bases_datos"><i class="fa-solid fa-database"></i> Bases de datos</label>
+          <input type="text" class="form-control" id="bases_datos" name="bases_datos" placeholder="Ej: MySQL, MongoDB"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="control_version"><i class="fa-solid fa-code-branch"></i> Control de versiones</label>
+          <input type="text" class="form-control" id="control_version" name="control_version" placeholder="Ej: Git, SVN"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="herramientas"><i class="fa-solid fa-toolbox"></i> Herramientas</label>
+          <input type="text" class="form-control" id="herramientas" name="herramientas"
+            placeholder="Ej: Docker, Jenkins" required />
+        </div>
+      </div>
+
+      <!-- Experiencia -->
+      <div class="card">
+        <div class="form-section-title">Experiencia Laboral</div>
+
+        <div class="mb-3">
+          <label for="puesto1"><i class="fa-solid fa-briefcase"></i> Puesto 1</label>
+          <input type="text" class="form-control" id="puesto1" name="puesto1" placeholder="Ej: Desarrollador Frontend"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="periodo1"><i class="fa-solid fa-calendar-days"></i> Periodo 1</label>
+          <input type="text" class="form-control" id="periodo1" name="periodo1" placeholder="Ej: Ene 2020 - Dic 2022"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="tareas1"><i class="fa-solid fa-tasks"></i> Tareas 1</label>
+          <textarea class="form-control" id="tareas1" name="tareas1" rows="3"
+            placeholder="Describe tus responsabilidades y logros" required></textarea>
+        </div>
+
+        <hr />
+
+        <div class="mb-3">
+          <label for="puesto2"><i class="fa-solid fa-briefcase"></i> Puesto 2</label>
+          <input type="text" class="form-control" id="puesto2" name="puesto2" placeholder="Ej: Asistente de Proyecto"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="periodo2"><i class="fa-solid fa-calendar-days"></i> Periodo 2</label>
+          <input type="text" class="form-control" id="periodo2" name="periodo2" placeholder="Ej: Mar 2018 - Dic 2019"
+            required />
+        </div>
+        <div class="mb-3">
+          <label for="tareas2"><i class="fa-solid fa-tasks"></i> Tareas 2</label>
+          <textarea class="form-control" id="tareas2" name="tareas2" rows="3"
+            placeholder="Describe tus responsabilidades y logros" required></textarea>
+        </div>
+      </div>
+
+      <!-- Educación -->
+      <div class="card">
+        <div class="form-section-title">Educación</div>
+        <div class="mb-3">
+          <label for="titulo_educacion"><i class="fa-solid fa-graduation-cap"></i> Título académico</label>
+          <input type="text" class="form-control" id="titulo_educacion" name="titulo_educacion"
+            placeholder="Ej: Licenciatura en Informática" required />
+        </div>
+        <div class="mb-3">
+          <label for="institucion"><i class="fa-solid fa-school"></i> Institución</label>
+          <input type="text" class="form-control" id="institucion" name="institucion"
+            placeholder="Ej: Universidad de Buenos Aires" required />
+        </div>
+        <div class="mb-3">
+          <label for="periodo_educacion"><i class="fa-solid fa-calendar-alt"></i> Periodo</label>
+          <input type="text" class="form-control" id="periodo_educacion" name="periodo_educacion"
+            placeholder="Ej: 2015 - 2019" required />
+        </div>
+      </div>
+
+      <div class="d-grid mt-4">
+        <button type="submit" class="btn btn-success btn-lg">Generar Currículum</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
