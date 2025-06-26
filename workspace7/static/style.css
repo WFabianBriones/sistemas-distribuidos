@@ -13,10 +13,10 @@ body {
 }
 
 .profile-img {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 5px; /* Puedes poner 0 para esquinas rectas o un valor pequeño para esquinas ligeramente redondeadas */
   border: 5px solid #38b000;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
