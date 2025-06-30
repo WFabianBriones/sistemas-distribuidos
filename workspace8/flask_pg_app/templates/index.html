@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lista de Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+        .post h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .post p {
+            margin: 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posts</h1>
+
+    {% if postsHtml %}
+        {% for posts in postsHtml %}
+            <div class="post">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.content }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No hay posts para mostrar.</p>
+    {% endif %}
+    
+</body>
+</html>
